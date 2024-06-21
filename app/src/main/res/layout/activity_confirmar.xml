@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LancamentoActivity">
-
+    tools:context=".ConfirmarActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -17,13 +15,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cod" />
+            android:text="Cod:  " />
 
-        <EditText
-            android:id="@+id/etCod"
+        <TextView
+            android:id="@+id/tvCod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number" />
+            android:text="0"
+            android:textAppearance="@android:style/TextAppearance.Large"/>
 
     </LinearLayout>
 
@@ -36,13 +35,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Qnt." />
+            android:text="Qnt.:  " />
 
-        <EditText
-            android:id="@+id/etQnt"
+        <TextView
+            android:id="@+id/tvQnt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number" />
+            android:text="0"
+            android:textAppearance="@android:style/TextAppearance.Large"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -53,13 +54,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Valor" />
+            android:text="Valor:  " />
 
-        <EditText
-            android:id="@+id/etValor"
+        <TextView
+            android:id="@+id/tvValor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal" />
+            android:text="0"
+            android:textAppearance="@android:style/TextAppearance.Large"/>
     </LinearLayout>
 
     <LinearLayout
@@ -68,16 +70,11 @@
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/btConfirmar"
+            android:id="@+id/btEnviar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Confirmar" />
+            android:text="Enviar" />
 
-        <Button
-            android:id="@+id/btListar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Listar"/>
     </LinearLayout>
 
 </LinearLayout>
